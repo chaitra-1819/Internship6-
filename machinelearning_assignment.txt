@@ -1,0 +1,70 @@
+1. C
+   The value of correlation coefficient will always between -1 and 1
+   
+2. D
+   Ridge regularisation
+
+
+3. C
+   Hyper plane is not a kernel in Support Vector Machines
+   
+4.D
+  support vector classifier
+
+
+5.C
+  old coefficient of ‘X’ ÷ 2.205
+
+6.B
+  increases
+
+7.D
+Random Forests provide a reliable feature importance estimate
+
+8.B,C 
+  Principal Components are calculated using unsupervised learning techniques
+  Principal Components are linear combinations of Linear Variables.
+
+9.B,C
+ Identifying loan defaulters in a bank on the basis of previous years’ data of loan accounts.
+ Identifying spam or ham emails
+
+
+10. A,B,D
+max_depth, max_features, min_samples_leaf are hyper parameters of decision tree.
+
+11.Outliers:
+
+Those datapoints which are too far from zero will be treated as outliers i.e signed number of standard deviations by which value of observation or datapoints
+is above mean value of what is being observed or measured.
+According to Basic definition of IQR outliers- values less than Q1-1.5*IQR and values greater than Q3+1.5*IQR are treated as outliers where
+	Q1 is 25th percentile  and Q3 is 75th percentile
+Calculation of outliers:
+	Consider a dataframe df
+	Q1= df.quantile(0.25)
+	Q3= df.quantile(0.75)
+	IQR= Q3-Q1
+To print outliers:
+df<(Q1-1.5*IQR) | df>(Q3+1.5*IQR)
+	
+
+12. Bagging : Its a parallel technique which uses models in parallel fashion to get the output Ex: RandomForest Classifier used to decrease variance.
+    Boosting : Its a sequential technique which use models as input to other model to get the output Ex: AdaBoost Classifier used to decrease bias.
+  
+
+13.R-squared, also known as the coefficient determination, defines the degree to which the variance in the dependent variable (or target) 
+  can be explained by the independent variable (features).Similar to R-squared, the Adjusted R-squared measures the variation in the 
+   dependent variable (or target), explained by only the features which are helpful in making predictions. 
+  Unlike R-squared, the Adjusted R-squared would penalize you for adding features which are not useful for predicting the target.
+    
+
+14. Normalization is a scaling technique in which values are shifted and rescaled so that they end up ranging between 0 and 1. 
+    It is also known as Min-Max scaling.
+    Standardization is another scaling technique where the values are centered around the mean with a unit standard deviation. 
+    This means that the mean of the attribute becomes zero and the resultant distribution has a unit standard deviation.
+	
+15.Cross validation is used to avoid overfitting and underfitting it will apply on varioys models with cv value as parameter.
+  Advantages: Cross Validation helps in finding the optimal value of hyperparameters to increase the efficiency of the algorithm.
+  Disadvantage: Increases Training Time and needs expensive computation
+   
+
